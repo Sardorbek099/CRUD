@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="form mt-3">
+                <input type="text" id="title" class="form-control" placeholder="Video titleni kiriting">
+                <input type="text" id="videoUrl" class="form-control my-3" placeholder="Video urlni kiriting">
+                <button class="btn btn-primary form-control" onclick="addVideo()">Qo'shish</button>
+                <input type="search" id="searchedTitle" class="form-control mt-3" placeholder="Qaysi kinoni qidiramiz" oninput="searchVideos()">
+            </div>
+            <div class="row my-5">
+                
+            </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Tahrirlash menusi</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="text" id="titleForEdit" class="form-control">
+            <input type="text" id="videoUrlForEdit" class="form-control my-3" >
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" onclick="addEditedVideo()">Tahrirlash</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
